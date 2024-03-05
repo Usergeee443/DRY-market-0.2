@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(100, 0, 0);
+}
+.header .logo-header {
+  display: flex;
+  gap: 20px;
+  padding-left: 50px;
+  padding-top: 28px;
+}
+.header .logo-header h1 {
+  padding-right: 50px;
+  color: #fff;
+  margin-top: 2px;
+}
+.header .container-input {
+  position: relative;
+  --size-button: 40px;
+  color: white;
+}
+.header .input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #000;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header .input:focus,
+.header .input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+}
+.header .input:focus + .icon,
+.header .input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+.header .container-input .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+}
+.header .container-input .icon svg {
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+.header button {
+  margin-left: 50px;
+  font-size: 16px;
+  height: 50px;
+  margin-top: -4px;
+  position: relative;
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #fff;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+.header button:active {
+  transform: scale(0.95);
+}
+.header button span {
+  color: #464646;
+}
+.header button .border {
+  position: absolute;
+  border: 0.15em solid #fff;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+}
+.header button:hover .border {
+  display: block;
+  width: 9.9em;
+  height: 3.7em;
+}
+.header .full-rounded {
+  border-radius: 2em;
+}
+.header .head-buttons {
+  padding-top: 4px;
+  margin-left: -20px;
+}
+.header .home-icon {
+  padding-top: 4px;
+}
+.header a {
+  font-size: 17px;
+  text-decoration: none;
+}
+.header .menu__link {
+  color: #fff;
+  line-height: 2;
+  position: relative;
+}
+.header .menu__link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.25rem;
+  left: 50%;
+  transition: width 0.4s, left 0.4s;
+}
+.header .menu__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.head-buttons {
+  margin-left: 40px;
+}
+.head-buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.tavsiyalar h1 {
+  color: #fff;
+  padding-left: 50px;
+  font-size: 35px;
+  padding-top: 50px;
+}
+
+.head-cards {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  padding-left: 45px;
+}
+.head-cards .card {
+  max-width: 300px;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+.head-cards .card a {
+  text-decoration: none;
+}
+.head-cards .content {
+  padding: 1.1rem;
+}
+.head-cards .image {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(239, 205, 255);
+}
+.head-cards .image img {
+  width: 100%;
+  height: 100%;
+}
+.head-cards .title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+.head-cards .desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.head-cards .action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.head-cards .action span {
+  transition: 0.3s ease;
+}
+.head-cards .action:hover span {
+  transform: translateX(4px);
+}
+
+@media only screen and (max-width: 580px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(100, 0, 0);
+  }
+  .logo-header {
+    display: flex;
+    gap: 20px;
+  }
+  .container-input {
+    position: relative;
+    --size-button: 40px;
+    color: white;
+  }
+  .input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #000;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+  }
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .container-input .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+  .container-input .icon svg {
+    color: #000;
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

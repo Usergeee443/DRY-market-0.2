@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRY fruits market 0.2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./scss/main.css">
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: rgba(100, 0, 0, 0.750);
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 100%;
+          padding-top: 50px;
+        }
+    
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-header">
+                <img src="" alt="">
+                <h1>DRY market</h1>
+                <div class="container-input">
+                    <input type="text" name="text" class="input" required="" placeholder="Type to search...">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Search</title>
+                            <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <button class="full-rounded">
+                  <span>Hover me</span>
+                  <div class="border full-rounded"></div>
+                </button>
+
+                <div class="head-buttons">
+                    <a href="#" class="menu__link">
+                        <lord-icon class="home-icon"
+                        src="https://cdn.lordicon.com/cnpvyndp.json"
+                        trigger="hover"
+                        colors="primary:#ffffff"
+                        style="width:22px;height:22px">
+                        </lord-icon>
+                        Asosiy
+                    </a>
+                    <a href="#" class="menu__link">
+                        <lord-icon class="home-icon"
+                        src="https://cdn.lordicon.com/mfmkufkr.json"
+                        trigger="hover"
+                        colors="primary:#ffffff"
+                        style="width:22px;height:22px">
+                        </lord-icon>
+                        Savat
+                    </a>
+                    <a href="#" class="menu__link">
+                        <lord-icon class="home-icon"
+                        src="https://cdn.lordicon.com/xyboiuok.json"
+                        trigger="hover"
+                        colors="primary:#ffffff"
+                        style="width:22px;height:22px">
+                        </lord-icon>
+                        Sevimli
+                    </a>
+                    <a href="#" class="menu__link">
+                        <lord-icon class="home-icon"
+                        src="https://cdn.lordicon.com/bgebyztw.json"
+                        trigger="hover"
+                        colors="primary:#ffffff,secondary:#ffffff"
+                        stroke="bold"
+                        style="width:22px;height:22px">
+                        </lord-icon>
+                        Kirish
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="small-header">
+            <div class="head-buttons">
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                <a href="#" class="menu__link">
+                    Asosiy
+                </a>
+                
+                
+            </div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/516816924/photo/raw-organic-medjool-dates.webp?b=1&s=170667a&w=0&k=20&c=eN1TD05RbeiYhjZEg7HYwpLVhA_vnBW0OEjHFrsqZQQ=" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.webp?b=1&s=170667a&w=0&k=20&c=kNrk41OV8nsJ2qIt-PUBFQGZzsxIJo13XhRuehHZSzw=" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1598799170815-933217492614?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHJ5JTIwZnJ1aXRzfGVufDB8fDB8fHww" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://plus.unsplash.com/premium_photo-1669205434519-a042ba09fbdd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZHJ5JTIwZnJ1aXRzfGVufDB8fDB8fHww" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1598371623789-44e341c1b6ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRyeSUyMGZydWl0c3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/515201669/photo/baked-dehydrated-apples-chips.webp?b=1&s=170667a&w=0&k=20&c=7sYMemNoouZWkBpZm6HbUi8L6UYGYHH4Tz-V42DwS4M=" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://plus.unsplash.com/premium_photo-1667547599639-b9d988341af0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGRyeSUyMGZydWl0c3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1595412017940-94541e6b1ce7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGRyeSUyMGZydWl0c3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1643741862113-eb204c80c366?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxkcnklMjBmcnVpdHN8ZW58MHx8MHx8fDA%3D" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="tavsiyalar">
+          <h1>Tavsiyalar</h1>
+        </div>
+        <div class="head-cards">
+          <div class="card">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1595412017587-b7f3117dff54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHJ5JTIwZnJ1aXRzfGVufDB8fDB8fHww" alt="">
+            </div>
+             <div class="content">
+               <a href="#">
+                 <span class="title">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 </span>
+               </a>
+           
+               <p class="desc">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                 dolores, possimus pariatur animi temporibus nesciunt praesentium 
+               </p>
+           
+               <a class="action" href="#">
+                 Find out more
+                 <span aria-hidden="true">
+                   →
+                 </span>
+               </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="https://media.istockphoto.com/id/1588975253/photo/a-small-bucket-filled-with-raisins.jpg?s=612x612&w=0&k=20&c=Ub8uefKW89VC1zxe6xubM-pB10zGRqyecthIDB7nDRE=" alt="">
+            </div>
+             <div class="content">
+               <a href="#">
+                 <span class="title">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 </span>
+               </a>
+           
+               <p class="desc">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                 dolores, possimus pariatur animi temporibus nesciunt praesentium 
+               </p>
+           
+               <a class="action" href="#">
+                 Find out more
+                 <span aria-hidden="true">
+                   →
+                 </span>
+               </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1524593656068-fbac72624bb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" alt="">
+            </div>
+             <div class="content">
+               <a href="#">
+                 <span class="title">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 </span>
+               </a>
+           
+               <p class="desc">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                 dolores, possimus pariatur animi temporibus nesciunt praesentium 
+               </p>
+           
+               <a class="action" href="#">
+                 Find out more
+                 <span aria-hidden="true">
+                   →
+                 </span>
+               </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="https://images.unsplash.com/photo-1610401882421-f05386f4dfc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8" alt="">
+            </div>
+             <div class="content">
+               <a href="#">
+                 <span class="title">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 </span>
+               </a>
+           
+               <p class="desc">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                 dolores, possimus pariatur animi temporibus nesciunt praesentium 
+               </p>
+           
+               <a class="action" href="#">
+                 Find out more
+                 <span aria-hidden="true">
+                   →
+                 </span>
+               </a>
+            </div>
+          </div>
+
+
+          
+        </div>   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>
